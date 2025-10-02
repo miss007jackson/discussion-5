@@ -36,6 +36,12 @@ class Reaction
       {
         return molecules_.at(index);
       }
+
+      ~Molecule()
+      {
+          coords_.clear();
+          num_atoms_ = 0;
+      }
 };
 
 Reaction r(..);
