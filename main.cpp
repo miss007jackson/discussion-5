@@ -25,6 +25,12 @@ class Molecule
       {
         coords_ = coords;
       }
+
+      ~Molecule()
+      {
+          coords_.clear();
+          num_atoms_ = 0;
+      }
 };
 
 
